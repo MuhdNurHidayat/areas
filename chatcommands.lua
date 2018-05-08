@@ -140,7 +140,7 @@ minetest.register_chatcommand("rename_area", {
 
 minetest.register_chatcommand("find_areas", {
 	params = "<regexp>",
-	description = S("Find areas using a Lua regular expression"),,
+	description = S("Find areas using a Lua regular expression"),
 	privs = areas.adminPrivs,
 	func = function(name, param)
 		if param == "" then
@@ -302,7 +302,7 @@ minetest.register_chatcommand("area_openfarming", {
 		areas.areas[id].openfarming = openfarming or nil
 		areas:save()
 		-- Translators: @1 is one of the previous 'opened' or 'closed'
-+		return true, S("Area @1 to farming.", openfarming_msg)
+		return true, S("Area @1 to farming.", openfarming_msg)
 	end
 })
 
@@ -422,7 +422,7 @@ minetest.register_chatcommand("area_info", {
 })
 
 --MFF DEBUT crabman(17/09/2015 ) respawn player at in special area(event) if a spawn is set.
-+minetest.register_chatcommand("area_addspawn", {
+minetest.register_chatcommand("area_addspawn", {
 	params = "<ID>",
 		privs = areas.adminPrivs,
 	description = S("Define special spawn for area"),

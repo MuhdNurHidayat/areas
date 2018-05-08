@@ -234,7 +234,6 @@ function areas:canPlayerAddArea(pos1, pos2, name)
 					.." areas that you are allowed to protect.")
 		end
 	end
-end
 
 	-- Check intersecting areas
 	local can, id = self:canMakeArea(pos1, pos2, name)  --MFF crabman(25/02/2016) fix areas in areas
